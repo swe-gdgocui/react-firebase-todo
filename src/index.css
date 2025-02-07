@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+/* Setup font */
+@theme {
+    --font-ubuntu: "Ubuntu Sans", serif;
+    --font-poppins: "Poppins", serif;
+}
