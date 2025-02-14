@@ -42,7 +42,7 @@ function EditPage() {
                     Save
                 </button>
             </div>
-            <textarea className="textarea textarea-accent  w-full"
+            <textarea className="textarea  w-full"
                 placeholder="Enter your task here"
                 value={data}
                 onChange={(e) => setData(e.target.value)}

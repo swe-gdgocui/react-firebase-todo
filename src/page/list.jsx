@@ -16,7 +16,7 @@ function ListPage() {
         <main className='p-5 md:p-20 space-y-4'>
             <div className='flex justify-between'>
                 <h1 className='text-2xl font-bold'>
-                    GDGOC Todo List
+                    GDGOCUI Todo List
                 </h1>
                 <a href="/create">
                     <button className='btn btn-primary'>
