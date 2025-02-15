@@ -1,3 +1,4 @@
+import { marked } from "marked";
 import { useEffect, useState } from 'react';
 import { deleteTodo, getTodos, toggleCheck } from '../repository/todo';
 
@@ -43,9 +44,10 @@ function ListPage() {
                                                     document.location.reload()
                                                 }}
                                             />
-                                            <p className={`text-xs md:text-sm ${item.checked ? 'line-through' : ''} text-black whitespace-pre-wrap`}>
-                                                {item.title}
-                                            </p>
+                                            <p
+                                                className={`text-xs md:text-sm ${item.checked ? 'line-through' : ''} text-black whitespace-pre-wrap`}
+                                                dangerouslySetInnerHTML={{ __html: marked.parse(item.title) }}
+                                            ></p>
                                         </div>
                                         <div className='flex items-center gap-4 justify-end'>
                                             <button className='btn btn-primary'

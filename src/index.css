@@ -6,3 +6,19 @@
     --font-ubuntu: "Ubuntu Sans", serif;
     --font-poppins: "Poppins", serif;
 }
+
+h1 {
+    @apply text-xl font-bold;
+}
+
+h2 {
+    @apply text-lg font-bold;
+}
+
+h3 {
+    @apply text-base font-bold;
+}
+
+h4 {
+    @apply text-sm font-bold;
+}
