@@ -43,7 +43,9 @@ function ListPage() {
                                                     document.location.reload()
                                                 }}
                                             />
-                                            <p className={`text-xs md:text-sm ${item.checked ? 'line-through' : ''} text-black`}>{item.title}</p>
+                                            <p className={`text-xs md:text-sm ${item.checked ? 'line-through' : ''} text-black whitespace-pre-wrap`}>
+                                                {item.title}
+                                            </p>
                                         </div>
                                         <div className='flex items-center gap-4 justify-end'>
                                             <button className='btn btn-primary'
